@@ -4,7 +4,7 @@ import TodoForm from "./TodoForm";
 import "./TodoWrapper.css";
 
 function TodoWrapper() {
-  let keyList = JSON.parse(localStorage.getItem("keyList"));
+  let keyList = JSON.parse(localStorage.getItem("keyList")) ||[];
 
   const [count, setCount] = useState(keyList.length);
 
@@ -16,10 +16,6 @@ function TodoWrapper() {
     setCount((prevCount) => prevCount - 1);
   }
 
-  useEffect(() => {
-    console.log(count);
-  }, [count]);
-
   return (
     <div className="wrapper">
       <TodoForm incrementList={incrementList} />
@@ -29,14 +25,14 @@ function TodoWrapper() {
         {keyList.map((element) => {
           let entry = JSON.parse(localStorage.getItem(JSON.stringify(element)));
           return (
-            <>
+            <div key={element}>
               <Todos
                 title={entry.title}
                 description={entry.description}
                 todo={element}
                 decrementList={decrementList}
               />
-            </>
+            </div>
           );
         })}
       </div>

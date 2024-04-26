@@ -14,7 +14,7 @@ function Todos(props) {
   }
 
   return (
-    <div id={props.todo} className="todo">
+    <div className="todo">
       <h1>{props.title}</h1>
       <h2>{props.description} </h2>
       <img className="trash" src={trashBin} onClick={deleteTodo}></img>

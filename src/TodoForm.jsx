@@ -10,7 +10,7 @@ function TodoForm(props) {
   function onSubmit() {
     let randKey = crypto.randomUUID();
 
-    let keyList = JSON.parse(localStorage.getItem("keyList"));
+    let keyList = JSON.parse(localStorage.getItem("keyList"))||[];
     keyList.push(randKey);
     localStorage.setItem("keyList", JSON.stringify(keyList));
     props.incrementList();
