@@ -1,0 +1,40 @@
+form{
+    margin-bottom: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content:left;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    background-color: rgb(255, 249, 249);
+    border-radius: 10px;
+    border-color: black;
+    border: 2px solid;
+    max-inline-size: 800px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.add{
+    cursor: pointer;
+    height: 2rem;
+    margin-left: 1rem;
+}
+
+label{
+    margin:5px;
+    
+}
+
+input{
+    font-size: 1rem;
+    border-radius: 3px;
+    margin:1px;
+    
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    
+}
