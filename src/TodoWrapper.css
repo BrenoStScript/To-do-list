@@ -1,37 +1,36 @@
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 90%;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 90%;
 }
 
-.container{
+.container {
+  border: 3px solid;
+  border-color: black;
+  border-radius: 20px;
 
-    border:3px solid;
-    border-color: black;
-    border-radius: 20px;
+  min-height: 80vh;
+  width: 90vw;
+  padding: 20px;
 
+  display: flex;
+  flex-wrap: wrap;
 
-    min-height: 80vh;
-    width: 90vw;
-    padding: 20px;
-
-
-    display: flex;
-    flex-wrap: wrap;
-
-    align-content: flex-start;
-    justify-content:center;
-    
-
+  align-content: flex-start;
+  justify-content: center;
 }
 
-.counter{
-    width: 30vw;
-    min-width: 300px;
-    color:black;
-    font-size: 2rem;
-    margin-left: 15px;
-    justify-self: center;
-    text-align: center;
+.counter {
+  width: 30vw;
+  min-width: 300px;
+  color: black;
+  font-size: 2rem;
+  margin-left: 15px;
+  justify-self: center;
+  text-align: center;
+}
+
+.keyWrapper {
+  width: 15%;
 }

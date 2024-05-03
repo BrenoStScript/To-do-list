@@ -25,7 +25,7 @@ function TodoWrapper() {
         {keyList.map((element) => {
           let entry = JSON.parse(localStorage.getItem(JSON.stringify(element)));
           return (
-            <div key={element}>
+            <div className="keyWrapper" key={element}>
               <Todos
                 title={entry.title}
                 description={entry.description}
